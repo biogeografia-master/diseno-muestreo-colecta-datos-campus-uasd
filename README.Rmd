@@ -1,0 +1,95 @@
+---
+title: Diseño de muestreo para colecta de datos de campo
+author: <b>José-Ramón Martínez-Batlle, Arlen Marmolejo</b> <br> Facultad de Ciencias, Universidad Autónoma de Santo Domingo (UASD) <br> Santo Domingo, República Dominicana
+bibliography: references.bib
+csl: apa-es.csl
+lang: es
+output: github_document
+editor_options: 
+  chunk_output_type: console
+always_allow_html: true
+---
+
+<!-- README.md se genera a partir de README.Rmd. Por favor, edita ese archivo. -->
+
+```{r, echo=F, include=F}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  eval = FALSE,
+  out.width = '80%',
+  dpi = 300,
+  fig.align = "center"
+  )
+options(digits = 3)
+options(knitr.duplicate.label = "allow")
+library(tidyverse)
+library(sf)
+library(stringi)
+library(kableExtra)
+options(knitr.kable.NA = '')
+estilo_kable <- function(df, titulo = '', cubre_anchura = T) {
+  df %>% kable(format = 'html', escape = F, booktabs = T,
+               digits = 2, caption = titulo) %>%
+    kable_styling(bootstrap_options = c("hover", "condensed"),
+                  full_width = cubre_anchura, position = "center")
+}
+```
+
+
+# Diseño de muestreo y colecta de datos de campo
+
+En teoría, **una buena investigación comienza con unas buenas preguntas**. Se supone que las preguntas son las que guían el resto del proceso de investigación desde el comienzo, por lo que formular preguntas y definir objetivos debería ser el primer paso. Pero en el contexto de un ejercicio académico, en concreto, dentro de una materia del segundo o tercer año de carrera, como lo es biogeografía, he optado por no ser muy exigente en el orden de las cosas, por lo que no pediré formular preguntas de forma preceptiva antes de iniciar tu estudio. Ya verás que, con el tiempo, la experiencia (y el trabajo de campo) te dará más información y herramientas para formular buenas preguntas que den inicio a importantes estudios; mientras más aprendas sobre un área de conocimiento específica, mejores preguntas podrás formular, porque sabrás en qué dirección debe avanzarse en función del estado de la cuestión.
+
+El segundo aspecto más importante de una buena investigación es contar con un buen diseño de muestreo y una colecta de datos de campo realizada de forma sistemática. Esta parte la más importante de un buen trabajo de ecología numérica, pues si colectamos buenos datos hoy, en el futuro podremos responder múltiples preguntas, incluso algunas que no hayamos formulado inicialmente.
+
+En investigaciones que siguen diseños estructurados y protocolos de campo, **la sección "Metodología" (el "cómo" de un estudio) normalmente se compone de varias subsecciones, una de las cuales comúnmente se denomina "Diseño de muestreo y colecta de datos de campo". Este escrito tiene por objetivo apoyarte en ese aspecto.**.
+
+## Colecta tus datos de campo
+
+Usa la función de abajo para elegir un número de hexágonos que consideres abarcable para tus fines, considerando la cobertura como criterio de estratificación estadística. Piensa en un "estrato estadístico" como una cualidad que segrega en subgrupos un ecosistema o un territorio. Por ejemplo, si segregamos el campus de la UASD según su cobertura, podríamos tener al menos cuatro subgrupos o estratos: áreas con dosel, áreas con edificaciones, áreas con herbáceas/suelo expuesto y áreas pavimentadas. Si queremos hacer un muestreo estratificado e integral, deberíamos asegurarnos de colectar datos en cada uno de esos estratos, para que nuestra muestra sea representativa del territorio. Si queremos concentrarnos en una hábitat específico, por ejemplo, en las áreas con dosel, entonces igualmente necesitaremos los estratos para saber dónde elegir nuestras muestras.
+
+Se ha segregado el campus de la UASD en hexágonos de la biblioteca H3 de resolución 11 (medianos, ~1600 m<sup>2</sup> cada uno) y 12 (pequeños, ~230m<sup>2</sup> cada uno), en el polígono núcleo del campus de la Universidad Autónoma de Santo Domingo (UASD), sede central; el diseño está basado en @jose_ramon_martinez_batlle_2023_8404063, dentro del cual se encuentra el documento ["Clasificación de hexágonos del polígono núcleo del campus de la Universidad Autónoma de Santo Domingo (UASD) en su sede central, usando coberturas del suelo"](https://github.com/geofis/coberturas-suelo-uasd/blob/main/clasificacion-de-hexagonos.md), el cual explica el procedimiento de generación de los hexágonos y su clasificación.
+
+Con dicha información, realiza una selección de sitios en función de la cobertura y el tamaño de tu muestra aplicando la función mostrada abajo. Puedes seleccionar hexágonos de varias clases, en cuyo caso el número de hexágonos de cada clase, será proporcional a su representación proporcional en el campus (es la condición básica del muestreo estratificado).
+
+### Función para seleccionar hexágonos
+
+Los profesores somos conscientes de que usar R para hacer la selección es un reto para muchos estudiantes, por lo que hemos preparado la función que se muestra a continuación, la cual puedes usar para hacer la selección de hexágonos de forma casi automática. Lo único que necesitarás es clonar el repositorio de GitHub de las prácticas usando RStudio (mejor tu cuenta en el servidor), ejecutar este código de abajo, y subir el KML resultante a GoogleMaps, específicamente a MyMaps de Google (https://www.google.com/intl/es/maps/about/mymaps/). No encontrarás muchas aplicaciones en línea que, usando datos de cobertura y hexágonos procedentes de un índices espacial como H3, te genere un diseño de muestreo estratificado. El diseño de muestreo es, en cualquier estudio, un paso muy importante. Si tienes problemas ejecutando la aplicación, escríbenos.
+
+```{r}
+source('seleccionar-hexagonos-aleatoriamente.R')
+sample_hex_to_kml(resol = 12, n = 40, clases = c("DOSE", "SUEL", "EDIF","CONS"), seed = 1)
+```
+
+
+### ¿Qué te recomendamos llevar a tus salidas de campo?
+
+**Materiales necesarios para la colecta**
+
+- Lápiz de carbón.
+
+- Si vas a colectar muestras en terreno, lleva papel vegetal en cantidad suficiente para generar etiquetas. Las etiquetas serán lo suficientemente pequeñas para que quepan dentro de los frascos o envases que uses, y lo suficientemente grandes para colocar la siguiente información mínima (dependerá en gran medida de tu estudio): código del hexágono, tus nombres y apellidos, fecha. Si puedes, añade coordenadas de cualquier punto dentro del hexágono en grados y grados decimales (e.g. 18.23424$^\circ$, -71.82321$^\circ$).
+
+- Alcohol isopropílico. Este alcohol destruye (con el tiempo) muchas muestras, pero las conserva bien si sólo pasan unos pocos días. El alcohol etílico sería la opción idónea, pero está muy caro últimamente.
+
+-   **Celular**. Tiene doble función: como GPS para ubicarte en terreno y como herramienta para llenar formularios digitales (si aplica).
+
+    - My Maps de GoogleMaps (https://www.google.com/intl/es/maps/about/mymaps/). Deberás subir aquí tu diseño de muestreo, en formato KML. Necesitarás una cuenta de Google.
+
+    - Formularios electrónicos. Android. Descargar la aplicación [ODK Collect](https://play.google.com/store/apps/details?id=org.odk.collect.android) desde el Play Store. Recomiendo usar Android en lugar de iPhone. iPhone. Descargar GIC Collect.
+
+
+**Materiales personales recomendados**
+
+-   **¡Mucha (pero mucha) agua potable!**
+
+-   **Protección contra el sol: protector solar en crema, camisa manga larga, sombrero, mascarilla (recomendado), si vas a manipular especímenes usa guantes de látex o nitrilo (recomendado), protector solar, botas o zapatos cerrados. ¡TODO es útil!**
+
+-   **Comida** (llevarla puesta, es decir, lista para abrir y comer en cualquier lugar y momento).
+
+-   Repelente. En el campus de la UASD no suele haber mosquitos, pero no está de más llevarlo por si acaso.
+
+
+## Referencias

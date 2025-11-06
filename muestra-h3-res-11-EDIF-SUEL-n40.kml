@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Muestra estratificada (res 11, n=40)</name>
+    <Style id="style-EDIF">
+      <LineStyle>
+        <color>FF373737</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>994A4A4A</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="style-SUEL">
+      <LineStyle>
+        <color>FF6AADA5</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>998EE7DD</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>EDIF (n=23)</name>
+      <Placemark>
+        <name>311</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>30.466379</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>5.153661</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>55.716849</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>8.663111</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9192165,18.4602867,0 -69.9189691,18.4602438,0 -69.9188610,18.4600404,0 -69.9190003,18.4598800,0 -69.9192477,18.4599229,0 -69.9193559,18.4601262,0 -69.9192165,18.4602867,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>30</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>9.598524</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>90.401476</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9158419,18.4645006,0 -69.9155945,18.4644577,0 -69.9154864,18.4642544,0 -69.9156257,18.4640939,0 -69.9158731,18.4641369,0 -69.9159812,18.4643402,0 -69.9158419,18.4645006,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>202</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>7.879358</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>13.702449</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>78.418193</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9188922,18.4596767,0 -69.9186447,18.4596338,0 -69.9185366,18.4594304,0 -69.9186759,18.4592700,0 -69.9189233,18.4593129,0 -69.9190315,18.4595162,0 -69.9188922,18.4596767,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>16</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>12.212634</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>54.701598</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>33.085768</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9202209,18.4617529,0 -69.9199735,18.4617100,0 -69.9198653,18.4615067,0 -69.9200046,18.4613462,0 -69.9202521,18.4613891,0 -69.9203602,18.4615925,0 -69.9202209,18.4617529,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>185</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>16.451401</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>8.681216</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>74.867383</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9191854,18.4606504,0 -69.9189379,18.4606075,0 -69.9188298,18.4604042,0 -69.9189691,18.4602438,0 -69.9192165,18.4602867,0 -69.9193247,18.4604900,0 -69.9191854,18.4606504,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>143</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>40.435976</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>1.267229</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>58.296795</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9154552,18.4646181,0 -69.9152078,18.4645752,0 -69.9150996,18.4643719,0 -69.9152389,18.4642115,0 -69.9154864,18.4642544,0 -69.9155945,18.4644577,0 -69.9154552,18.4646181,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>213</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>18.313212</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>5.889507</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>43.158612</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>32.638669</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9178068,18.4635493,0 -69.9175594,18.4635064,0 -69.9174513,18.4633031,0 -69.9175906,18.4631426,0 -69.9178380,18.4631855,0 -69.9179461,18.4633889,0 -69.9178068,18.4635493,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>109</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>12.003535</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>76.810212</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>11.186253</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9214436,18.4606728,0 -69.9211961,18.4606299,0 -69.9210880,18.4604265,0 -69.9212273,18.4602661,0 -69.9214748,18.4603090,0 -69.9215829,18.4605123,0 -69.9214436,18.4606728,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>128</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>13.411809</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>18.902049</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>67.686142</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9134777,18.4613220,0 -69.9132303,18.4612791,0 -69.9131222,18.4610758,0 -69.9132615,18.4609154,0 -69.9135089,18.4609583,0 -69.9136170,18.4611616,0 -69.9134777,18.4613220,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>274</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>33.38238</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>60.02772</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>6.5899</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9166778,18.4635381,0 -69.9164303,18.4634952,0 -69.9163222,18.4632919,0 -69.9164615,18.4631314,0 -69.9167089,18.4631744,0 -69.9168171,18.4633777,0 -69.9166778,18.4635381,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>178</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>6.130059</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>93.869941</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9204704,18.4588427,0 -69.9202229,18.4587998,0 -69.9201148,18.4585965,0 -69.9202541,18.4584361,0 -69.9205016,18.4584790,0 -69.9206097,18.4586823,0 -69.9204704,18.4588427,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>138</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>26.399589</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>17.520844</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>32.424989</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>23.654578</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9168337,18.4617194,0 -69.9165862,18.4616765,0 -69.9164781,18.4614731,0 -69.9166174,18.4613127,0 -69.9168648,18.4613556,0 -69.9169730,18.4615589,0 -69.9168337,18.4617194,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>275</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>30.999967</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>21.18451</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>43.581935</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>4.233588</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9134154,18.4620495,0 -69.9131679,18.4620066,0 -69.9130598,18.4618033,0 -69.9131991,18.4616429,0 -69.9134465,18.4616858,0 -69.9135547,18.4618891,0 -69.9134154,18.4620495,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>211</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>29.278901</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>15.988913</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>34.286904</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>20.445282</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9158293,18.4602531,0 -69.9155819,18.4602102,0 -69.9154738,18.4600069,0 -69.9156131,18.4598465,0 -69.9158605,18.4598894,0 -69.9159686,18.4600927,0 -69.9158293,18.4602531,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>223</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>26.337822</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>72.673987</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0.988191</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9173577,18.4643943,0 -69.9171103,18.4643514,0 -69.9170021,18.4641481,0 -69.9171415,18.4639876,0 -69.9173889,18.4640305,0 -69.9174970,18.4642339,0 -69.9173577,18.4643943,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>80</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>34.282699</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>29.99083</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>35.726471</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9161225,18.4612269,0 -69.9158751,18.4611840,0 -69.9157670,18.4609807,0 -69.9159063,18.4608202,0 -69.9161537,18.4608631,0 -69.9162618,18.4610665,0 -69.9161225,18.4612269,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>69</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>2.513902</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>25.232774</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>60.200811</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>12.052513</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9167713,18.4624469,0 -69.9165239,18.4624040,0 -69.9164157,18.4622006,0 -69.9165551,18.4620402,0 -69.9168025,18.4620831,0 -69.9169106,18.4622864,0 -69.9167713,18.4624469,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>79</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0.004986</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>5.822451</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>94.172564</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>-1e-06</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9182871,18.4623405,0 -69.9180397,18.4622976,0 -69.9179316,18.4620943,0 -69.9180709,18.4619339,0 -69.9183183,18.4619768,0 -69.9184264,18.4621801,0 -69.9182871,18.4623405,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>110</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>19.988296</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>76.331283</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>3.680421</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9169710,18.4645118,0 -69.9167235,18.4644689,0 -69.9166154,18.4642656,0 -69.9167547,18.4641051,0 -69.9170021,18.4641481,0 -69.9171103,18.4643514,0 -69.9169710,18.4645118,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>299</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>31.292876</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>34.273837</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>34.433287</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9175136,18.4625756,0 -69.9172662,18.4625327,0 -69.9171581,18.4623293,0 -69.9172974,18.4621689,0 -69.9175448,18.4622118,0 -69.9176529,18.4624151,0 -69.9175136,18.4625756,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>194</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>98.771566</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>1.228434</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9179627,18.4617305,0 -69.9177153,18.4616876,0 -69.9176072,18.4614843,0 -69.9177465,18.4613239,0 -69.9179939,18.4613668,0 -69.9181020,18.4615701,0 -69.9179627,18.4617305,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>208</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>27.606122</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>14.48497</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>55.750409</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>2.158499</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9178692,18.4628218,0 -69.9176217,18.4627789,0 -69.9175136,18.4625756,0 -69.9176529,18.4624151,0 -69.9179004,18.4624581,0 -69.9180085,18.4626614,0 -69.9178692,18.4628218,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>149</name>
+        <styleUrl>#style-EDIF</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>EDIF</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0.118208</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>99.881792</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>0</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9208572,18.4587252,0 -69.9206097,18.4586823,0 -69.9205016,18.4584790,0 -69.9206409,18.4583185,0 -69.9208883,18.4583614,0 -69.9209965,18.4585648,0 -69.9208572,18.4587252,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>SUEL (n=17)</name>
+      <Placemark>
+        <name>298</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>25.231827</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>16.080101</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>16.481682</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>42.20639</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9195721,18.4605329,0 -69.9193247,18.4604900,0 -69.9192165,18.4602867,0 -69.9193559,18.4601262,0 -69.9196033,18.4601691,0 -69.9197114,18.4603725,0 -69.9195721,18.4605329,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>249</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>100</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9143573,18.4642431,0 -69.9141099,18.4642002,0 -69.9140018,18.4639969,0 -69.9141411,18.4638365,0 -69.9143885,18.4638794,0 -69.9144966,18.4640827,0 -69.9143573,18.4642431,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>333</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>100</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9151308,18.4640081,0 -69.9148834,18.4639652,0 -69.9147752,18.4637619,0 -69.9149146,18.4636015,0 -69.9151620,18.4636444,0 -69.9152701,18.4638477,0 -69.9151308,18.4640081,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>229</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0.691882</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>27.617386</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>27.327388</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>44.363344</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9137709,18.4622957,0 -69.9135235,18.4622528,0 -69.9134154,18.4620495,0 -69.9135547,18.4618891,0 -69.9138021,18.4619320,0 -69.9139102,18.4621353,0 -69.9137709,18.4622957,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>271</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>15.478509</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>37.294959</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0.218449</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>47.008083</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9156111,18.4627994,0 -69.9153636,18.4627565,0 -69.9152555,18.4625532,0 -69.9153948,18.4623928,0 -69.9156423,18.4624357,0 -69.9157504,18.4626390,0 -69.9156111,18.4627994,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>167</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0.723259</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>99.276741</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9136774,18.4633870,0 -69.9134300,18.4633441,0 -69.9133218,18.4631407,0 -69.9134611,18.4629803,0 -69.9137086,18.4630232,0 -69.9138167,18.4632265,0 -69.9136774,18.4633870,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>94</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>3.942192</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>3.661655</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>92.396153</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9148064,18.4633982,0 -69.9145590,18.4633553,0 -69.9144509,18.4631519,0 -69.9145902,18.4629915,0 -69.9148376,18.4630344,0 -69.9149457,18.4632378,0 -69.9148064,18.4633982,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>228</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>19.465455</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>22.378005</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>2.565851</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>55.590689</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9145756,18.4616970,0 -69.9143281,18.4616541,0 -69.9142200,18.4614507,0 -69.9143593,18.4612903,0 -69.9146067,18.4613332,0 -69.9147149,18.4615366,0 -69.9145756,18.4616970,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>136</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>27.839661</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>23.622227</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>48.538112</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9145132,18.4624245,0 -69.9142658,18.4623816,0 -69.9141577,18.4621782,0 -69.9142970,18.4620178,0 -69.9145444,18.4620607,0 -69.9146525,18.4622640,0 -69.9145132,18.4624245,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>230</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>27.194743</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>1.548444</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0.400734</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>70.856079</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9143262,18.4646069,0 -69.9140787,18.4645640,0 -69.9139706,18.4643607,0 -69.9141099,18.4642002,0 -69.9143573,18.4642431,0 -69.9144655,18.4644465,0 -69.9143262,18.4646069,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>36</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>7.655373</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>40.023891</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>52.320736</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9150996,18.4643719,0 -69.9148522,18.4643290,0 -69.9147441,18.4641256,0 -69.9148834,18.4639652,0 -69.9151308,18.4640081,0 -69.9152389,18.4642115,0 -69.9150996,18.4643719,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>55</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>100</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9143885,18.4638794,0 -69.9141411,18.4638365,0 -69.9140330,18.4636332,0 -69.9141723,18.4634728,0 -69.9144197,18.4635157,0 -69.9145278,18.4637190,0 -69.9143885,18.4638794,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>268</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>100</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9140330,18.4636332,0 -69.9137855,18.4635903,0 -69.9136774,18.4633870,0 -69.9138167,18.4632265,0 -69.9140641,18.4632695,0 -69.9141723,18.4634728,0 -69.9140330,18.4636332,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>197</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>29.883234</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>3.497341</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>66.619425</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9203768,18.4599341,0 -69.9201294,18.4598912,0 -69.9200213,18.4596878,0 -69.9201606,18.4595274,0 -69.9204080,18.4595703,0 -69.9205162,18.4597736,0 -69.9203768,18.4599341,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>320</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>6.782947</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>28.221817</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>13.935058</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>51.060178</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9202521,18.4613891,0 -69.9200046,18.4613462,0 -69.9198965,18.4611429,0 -69.9200358,18.4609825,0 -69.9202833,18.4610254,0 -69.9203914,18.4612287,0 -69.9202521,18.4613891,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>152</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>0</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>100</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9141577,18.4621782,0 -69.9139102,18.4621353,0 -69.9138021,18.4619320,0 -69.9139414,18.4617716,0 -69.9141888,18.4618145,0 -69.9142970,18.4620178,0 -69.9141577,18.4621782,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>255</name>
+        <styleUrl>#style-SUEL</styleUrl>
+        <ExtendedData>
+          <Data name="clase">
+            <value>SUEL</value>
+          </Data>
+          <Data name="porc_CONS">
+            <value>0</value>
+          </Data>
+          <Data name="porc_DOSE">
+            <value>0</value>
+          </Data>
+          <Data name="porc_EDIF">
+            <value>37.547165</value>
+          </Data>
+          <Data name="porc_SUEL">
+            <value>62.452835</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-69.9208260,18.4590890,0 -69.9205785,18.4590461,0 -69.9204704,18.4588427,0 -69.9206097,18.4586823,0 -69.9208572,18.4587252,0 -69.9209653,18.4589285,0 -69.9208260,18.4590890,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
