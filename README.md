@@ -6,6 +6,10 @@ Domingo, República Dominicana
 
 <!-- README.md se genera a partir de README.Rmd. Por favor, edita ese archivo. -->
 
+<img src="qr.jpg" width="30%" style="display: block; margin: auto auto auto 0;" />
+
+<https://github.com/biogeografia-master/diseno-muestreo-colecta-datos-campus-uasd>
+
 # Diseño de muestreo y colecta de datos de campo
 
 En teoría, **una buena investigación comienza con unas buenas
@@ -56,10 +60,10 @@ Se ha segregado el campus de la UASD en hexágonos de la biblioteca H3 de
 resolución 11 (medianos, ~1600 m<sup>2</sup> cada uno) y 12 (pequeños,
 ~230m<sup>2</sup> cada uno), en el polígono núcleo del campus de la
 Universidad Autónoma de Santo Domingo (UASD), sede central; el diseño
-está basado en (**jose_ramon_martinez_batlle_2023_8404063?**), dentro
-del cual se encuentra el documento [“Clasificación de hexágonos del
-polígono núcleo del campus de la Universidad Autónoma de Santo Domingo
-(UASD) en su sede central, usando coberturas del
+está basado en Batlle (2023), dentro del cual se encuentra el documento
+[“Clasificación de hexágonos del polígono núcleo del campus de la
+Universidad Autónoma de Santo Domingo (UASD) en su sede central, usando
+coberturas del
 suelo”](https://github.com/geofis/coberturas-suelo-uasd/blob/main/clasificacion-de-hexagonos.md),
 el cual explica el procedimiento de generación de los hexágonos y su
 clasificación.
@@ -195,3 +199,17 @@ sample_hex_to_kml(resol = 12, n = 25, clases = "DOSE", seed = 7)
   está de más llevarlo por si acaso.
 
 ## Referencias
+
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0" line-spacing="2">
+
+<div id="ref-jose_ramon_martinez_batlle_2023_8404063" class="csl-entry">
+
+Batlle, J. R. M. (2023). *geofis/coberturas-suelo-uasd: Coberturas del
+suelo del polígono núcleo del campus de la Universidad Autónoma de Santo
+Domingo (UASD) en su sede central* (Versión v0.91). Zenodo.
+<https://doi.org/10.5281/zenodo.8404063>
+
+</div>
+
+</div>

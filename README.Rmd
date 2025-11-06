@@ -17,7 +17,6 @@ knitr::opts_chunk$set(
   echo = TRUE,
   warning = FALSE,
   message = FALSE,
-  eval = FALSE,
   out.width = '80%',
   dpi = 300,
   fig.align = "center"
@@ -36,6 +35,13 @@ estilo_kable <- function(df, titulo = '', cubre_anchura = T) {
                   full_width = cubre_anchura, position = "center")
 }
 ```
+
+
+```{r, echo=F, out.width='30%', fig.align='left'}
+knitr::include_graphics('qr.jpg')
+```
+
+[https://github.com/biogeografia-master/diseno-muestreo-colecta-datos-campus-uasd](https://github.com/biogeografia-master/diseno-muestreo-colecta-datos-campus-uasd)
 
 
 # Diseño de muestreo y colecta de datos de campo
