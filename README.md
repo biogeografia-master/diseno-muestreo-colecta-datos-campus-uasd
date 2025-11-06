@@ -74,24 +74,83 @@ estratificado).
 ### Función para seleccionar hexágonos
 
 Los profesores somos conscientes de que usar R para hacer la selección
-es un reto para muchos estudiantes, por lo que hemos preparado la
-función que se muestra a continuación, la cual puedes usar para hacer la
-selección de hexágonos de forma casi automática. Lo único que
-necesitarás es clonar el repositorio de GitHub de las prácticas usando
-RStudio (mejor tu cuenta en el servidor), ejecutar este código de abajo,
-y subir el KML resultante a GoogleMaps, específicamente a MyMaps de
-Google (<https://www.google.com/intl/es/maps/about/mymaps/>). No
-encontrarás muchas aplicaciones en línea que, usando datos de cobertura
-y hexágonos procedentes de un índices espacial como H3, te genere un
-diseño de muestreo estratificado. El diseño de muestreo es, en cualquier
-estudio, un paso muy importante. Si tienes problemas ejecutando la
-aplicación, escríbenos.
+es un reto para muchos estudiantes, por lo que hemos preparado una
+función que se encarga de dicho proceso. La función, denominada
+`sample_hex_to_kml`, puedes usarla para hacer la selección de hexágonos
+de forma casi automática. Para ello, necesitarás seguir estos pasos:
+
+1.  Clonar el repositorio este GitHub a RStudio. Puedes usar RStudio
+    Desktop (instalado en tu PC), pero necesitarás tener todos estos
+    paquetes instalados: `sf`, `dplyr`, `xml2`. Por esta razón, te
+    recomendamos que lo hagas en la cuenta que creamos para ti en
+    nuestro servidor.
+
+2.  Ejecutar el código de abajo, definiendo tus propios parámetros. Los
+    parámetros que deberás definir son:
+
+- Resolución de hexágonos H3 (argumento `resol`). Sólo hay dos posibles,
+  11 o 12.
+
+- Número de hexágonos (argumento `n`). Total de hexágonos que necesitas
+  en tu muestra.
+
+- Clases de coberturas mayoritarias dentro del hexágono (argumento
+  `clases`). Sólo hay cuatro opciones posibles, se puede elegir una sola
+  o se pueden combinar (ver nota más adelante sobre selección para
+  múltiples clases): “DOSE” (dosel arbóreo), “SUEL” (suelo con o sin
+  herbáceas, sin infraestructura ni mobiliario que lo cubra), “CONS”
+  (construido para accesos y mobiliario, como acerado, pavimento,
+  bancos, pero no edificaciones erguidas), “EDIF” (edificaciones
+  erguidas, como edificios o pequeñas oficinas). Cada hexágono está
+  clasificado según clases de coberturas, siguiendo el criterio de
+  mayoría; por lo tanto, si un hexágono está clasificado como “DOSE”, es
+  porque en éste predomina el dosel, pero podrían haber otras clases en
+  minoría. En el caso de que coloques elijas varias clases de
+  coberturas, el número de hexágonos de cada clase será proporcional a
+  su representación en el campus.
+
+3.  Subir el KML resultante a GoogleMaps, específicamente a MyMaps de
+    Google (<https://www.google.com/intl/es/maps/about/mymaps/>).
+
+No encontrarás muchas aplicaciones en línea que, usando datos de
+cobertura y hexágonos procedentes de un índices espacial como H3, te
+genere un diseño de muestreo estratificado. El diseño de muestreo es, en
+cualquier estudio, un paso muy importante. Si tienes problemas
+ejecutando la aplicación, escríbenos.
+
+Ejemplo: el código a continuación produciría un KML en la misma carpeta
+donde se encuentra clonado el repositorio, con una muestra de 40
+hexágonos de resolución 12, distribuidos proporcionalmente entre las
+cuatro clases de cobertura mayoritaria dentro del hexágono.
+
+``` r
+source('seleccionar-hexagonos-aleatoriamente.R')
+sample_hex_to_kml(resol = 12, n = 40, clases = c("DOSE", "SUEL", "EDIF","CONS"), seed = 1)
+```
+
+Este otro ejemplo produce un KML con una muestra de 40 hexágonos de
+resolución 11, pero sólo entre las clases “EDIF” y “SUEL”. El número de
+hexágonos dependerá de cuál sea su representación proporcional en el
+campus, pero la suma del número de hexágonos de cada clase será 40.
+
+``` r
+source('seleccionar-hexagonos-aleatoriamente.R')
+sample_hex_to_kml(resol = 11, n = 40, clases = c("EDIF","SUEL"), seed = 1)
+```
+
+Finalmente, este otro ejemplo produce un KML con una muestra de 25
+hexágonos de resolución 12, todos ellos de la clase “DOSE”.
+
+``` r
+source('seleccionar-hexagonos-aleatoriamente.R')
+sample_hex_to_kml(resol = 12, n = 25, clases = "DOSE", seed = 7)
+```
 
 ### ¿Qué te recomendamos llevar a tus salidas de campo?
 
 **Materiales necesarios para la colecta**
 
-- Un lápiz de carbón.
+- Lápiz de carbón.
 
 - Si vas a colectar muestras en terreno, lleva papel vegetal en cantidad
   suficiente para generar etiquetas. Las etiquetas serán lo

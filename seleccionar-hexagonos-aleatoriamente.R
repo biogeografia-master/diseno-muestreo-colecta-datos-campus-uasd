@@ -169,43 +169,6 @@ sample_hex_to_kml <- function(resol = 11, n = 100, clases = c(1,2,3,4),
     message("Cuotas exactas (Hamilton): ", paste(paste0(names(quotas), "=", quotas), collapse=", "))
   }
   
-  # # asignaciones
-  # if (length(clases) == 1L) {
-  #   n_assign <- setNames(min(n, avail[1]), clases)
-  # } else {
-  #   n_assign <- allocate_counts(avail, n)
-  #   # reindex estricto + rellenar con 0
-  #   n_assign <- setNames(n_assign[names(avail)], names(avail))
-  #   n_assign[is.na(n_assign)] <- 0L
-  #   # fallback seguro si por algún motivo quedó en 0 pero hay disponibilidad
-  #   if (sum(n_assign) == 0L && sum(avail) > 0L) {
-  #     message("Asignación proporcional resultó 0; aplico fallback seguro.")
-  #     # reparte 1 en ciclo por orden de mayor disponibilidad hasta min(n, sum(avail))
-  #     n_target <- min(n, sum(avail))
-  #     n_assign[] <- 0L
-  #     order_idx <- order(avail, decreasing = TRUE)
-  #     i <- 1L; left <- n_target
-  #     while (left > 0) {
-  #       k <- order_idx[i]
-  #       if (n_assign[k] < avail[k]) { n_assign[k] <- n_assign[k] + 1L; left <- left - 1L }
-  #       i <- i + 1L; if (i > length(order_idx)) i <- 1L
-  #       if (all(n_assign >= avail)) break
-  #     }
-  #   }
-  #   if (sum(n_assign) == 0L) {
-  #     dist_all <- sf_in |> st_drop_geometry() |> count(clase, name="n") |> arrange(desc(n))
-  #     stop(paste0("No hay disponibilidad en las clases seleccionadas.\nDistribución detectada: ",
-  #                 paste(paste0(dist_all$clase,"=",dist_all$n), collapse=", ")))
-  #   }
-  #   if (sum(n_assign) < n) message("Aviso: asignados ", sum(n_assign), " de ", n, " (límite por disponibilidad).")
-  # }
-  # 
-  # # imprimir objetivos teóricos para transparencia
-  # tot_av <- sum(avail)
-  # targets <- if (tot_av>0) n * (avail / tot_av) else rep(0, length(avail))
-  # message("Objetivos teóricos: ", paste(paste0(names(avail), "=", sprintf("%.2f", targets)), collapse=", "))
-  # message("Asignación final: ",  paste(paste0(names(n_assign), "=", n_assign), collapse=", "))
-  
   # muestreo por clase
   parts <- list()
   for (cl in clases) {
@@ -281,7 +244,7 @@ sample_hex_to_kml <- function(resol = 11, n = 100, clases = c(1,2,3,4),
 
 # ---- ejemplos de uso ----
 # Todas las clases (proporcional a su disponibilidad real):
-# sample_hex_to_kml(resol = 11, n = 100, clases = c(2,1,3,4), seed = 2025)
+# sample_hex_to_kml(resol = 12, n = 40, clases = c("DOSE", "SUEL", "EDIF","CONS"), seed = 1)
 
 # Dos clases:
 # sample_hex_to_kml(resol = 11, n = 40, clases = c("EDIF","SUEL"), seed = 1)
