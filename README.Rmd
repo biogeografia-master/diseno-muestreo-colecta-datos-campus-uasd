@@ -56,36 +56,38 @@ En investigaciones que siguen diseños estructurados y protocolos de campo, **la
 
 Usa la función de abajo para elegir un número de hexágonos que consideres abarcable para tus fines, considerando la cobertura como criterio de estratificación estadística. Piensa en un "estrato estadístico" como una cualidad que segrega en subgrupos un ecosistema o un territorio. Por ejemplo, si segregamos el campus de la UASD según su cobertura, podríamos tener al menos cuatro subgrupos o estratos: áreas con dosel, áreas con edificaciones, áreas con herbáceas/suelo expuesto y áreas pavimentadas. Si queremos hacer un muestreo estratificado e integral, deberíamos asegurarnos de colectar datos en cada uno de esos estratos, para que nuestra muestra sea representativa del territorio. Si queremos concentrarnos en una hábitat específico, por ejemplo, en las áreas con dosel, entonces igualmente necesitaremos los estratos para saber dónde elegir nuestras muestras.
 
-Se ha segregado el campus de la UASD en hexágonos de la biblioteca H3 de resolución 11 (medianos, ~1600 m<sup>2</sup> cada uno) y 12 (pequeños, ~230m<sup>2</sup> cada uno), en el polígono núcleo del campus de la Universidad Autónoma de Santo Domingo (UASD), sede central; el diseño está basado en @jose_ramon_martinez_batlle_2023_8404063, dentro del cual se encuentra el documento ["Clasificación de hexágonos del polígono núcleo del campus de la Universidad Autónoma de Santo Domingo (UASD) en su sede central, usando coberturas del suelo"](https://github.com/geofis/coberturas-suelo-uasd/blob/main/clasificacion-de-hexagonos.md), el cual explica el procedimiento de generación de los hexágonos y su clasificación.
+Se ha segregado el campus de la UASD en hexágonos de la biblioteca H3 de resolución 11 (medianos, ~1600 m<sup>2</sup> cada uno) y 12 (pequeños, ~230 m<sup>2</sup> cada uno), en el polígono núcleo del campus de la Universidad Autónoma de Santo Domingo (UASD), sede central; el diseño está basado en @jose_ramon_martinez_batlle_2023_8404063, dentro del cual se encuentra el documento ["Clasificación de hexágonos del polígono núcleo del campus de la Universidad Autónoma de Santo Domingo (UASD) en su sede central, usando coberturas del suelo"](https://github.com/geofis/coberturas-suelo-uasd/blob/main/clasificacion-de-hexagonos.md), el cual explica el procedimiento de generación de los hexágonos y su clasificación.
 
-Con dicha información, realiza una selección de sitios en función de la cobertura y el tamaño de tu muestra aplicando la función mostrada abajo. Puedes seleccionar hexágonos de varias clases, en cuyo caso el número de hexágonos de cada clase, será proporcional a su representación proporcional en el campus (es la condición básica del muestreo estratificado).
+Con dicha información, la cual hemos añadido a este repo, podrás realizar una selección de sitios en función de la cobertura y el tamaño de tu muestra, aplicando la función mostrada abajo. Puedes seleccionar hexágonos de varias clases, en cuyo caso el número de hexágonos será proporcional a la representación proporcional de cada clase en el campus (condición básica del muestreo estratificado).
 
 ### Función para seleccionar hexágonos
 
-Los profesores somos conscientes de que usar R para hacer la selección es un reto para muchos estudiantes, por lo que hemos preparado una función que se encarga de dicho proceso. La función, denominada `sample_hex_to_kml`, puedes usarla para hacer la selección de hexágonos de forma casi automática. Para ello, necesitarás seguir estos pasos:
+Los profesores somos conscientes de que usar R para hacer la selección de sitios de muestreo es un reto para muchos estudiantes, por lo que hemos preparado una función que se encarga de dicho proceso. La función, denominada `sample_hex_to_kml`, se encarga de hacer la selección de sitios estratificando y aleatorizando de forma casi automática. Para ello, necesitarás seguir estos pasos:
 
-1. Clonar el repositorio este GitHub a RStudio. Puedes usar RStudio Desktop (instalado en tu PC), pero necesitarás tener todos estos paquetes instalados: `sf`, `dplyr`, `xml2`. Por esta razón, te recomendamos que lo hagas en la cuenta que creamos para ti en nuestro servidor.
+1. Clonar este repositorio desde GitHub a RStudio. Puedes usar RStudio Desktop (instalado en tu PC), pero necesitarás tener estos paquetes instalados: `sf`, `dplyr`, `xml2`. Si quieres evitar instalar paquetes o "pelear" con dependencias, te recomendamos que trabajes en la cuenta que creamos para ti en nuestro servidor RStudio.
 
-2. Ejecutar el código de abajo, definiendo tus propios parámetros. Los parámetros que deberás definir son:
+2. Ejecutar los ejemplos de código que se muestran abajo. Luego que comprendas el funcionamiento, define tus propios parámetros de muestreo. Los parámetros que deberás definir son:
 
-  - Resolución de hexágonos H3 (argumento `resol`). Sólo hay dos posibles, 11 o 12.
+  - Resolución de hexágonos H3 (argumento `resol`). Sólo hay dos posibles, 11 o 12. Si quieres hexágonos grandes (aprox. 1600 m<sup>2</sup>), elige 11; si quieres hexágonos pequeños (aprox. 230 m<sup>2</sup>), elige 12.
   
   - Número de hexágonos (argumento `n`). Total de hexágonos que necesitas en tu muestra.
   
-  - Clases de coberturas mayoritarias dentro del hexágono (argumento `clases`). Sólo hay cuatro opciones posibles, se puede elegir una sola o se pueden combinar (ver nota más adelante sobre selección para múltiples clases): "DOSE" (dosel arbóreo), "SUEL" (suelo con o sin herbáceas, sin infraestructura ni mobiliario que lo cubra), "CONS" (construido para accesos y mobiliario, como acerado, pavimento, bancos, pero no edificaciones erguidas), "EDIF" (edificaciones erguidas, como edificios o pequeñas oficinas). Cada hexágono está clasificado según clases de coberturas, siguiendo el criterio de mayoría; por lo tanto, si un hexágono está clasificado como "DOSE", es porque en éste predomina el dosel, pero podrían haber otras clases en minoría. En el caso de que coloques elijas varias clases de coberturas, el número de hexágonos de cada clase será proporcional a su representación en el campus.
+  - Clases de coberturas mayoritarias dentro del hexágono (argumento `clases`). Sólo hay cuatro opciones posibles; se puede elegir sólo una, o se pueden combinar (ver nota más adelante sobre selección para múltiples clases). Las opciones son: `"DOSE"` (dosel arbóreo), `"SUEL"` (suelo con o sin herbáceas, sin infraestructura ni mobiliario que lo cubra), `"CONS"` (construido para accesos y mobiliario, como acerado, pavimento, bancos, pero no edificaciones erguidas), `"EDIF"` (edificaciones erguidas, como edificios o pequeñas oficinas). Cada hexágono está clasificado según clases de coberturas, siguiendo el criterio de mayoría; por lo tanto, si un hexágono está clasificado como `"DOSE"`, es porque en éste predomina el dosel, pero podrían haber otras clases presente en él, todas en minoría. **Nota más adelante sobre selección para múltiples clases**: en el caso de que elijas varias clases de coberturas, el número de hexágonos de cada clase será proporcional a su representación en el campus.
 
 3. Subir el KML resultante a GoogleMaps, específicamente a MyMaps de Google (https://www.google.com/intl/es/maps/about/mymaps/).
 
-No encontrarás muchas aplicaciones en línea que, usando datos de cobertura y hexágonos procedentes de un índices espacial como H3, te genere un diseño de muestreo estratificado. El diseño de muestreo es, en cualquier estudio, un paso muy importante. Si tienes problemas ejecutando la aplicación, escríbenos.
+No encontrarás muchas aplicaciones en línea que, usando datos de cobertura y hexágonos procedentes de un índice espacial como H3, te genere un diseño de muestreo estratificado y aleatorio. El diseño de muestreo es, en cualquier estudio, un paso muy importante, por lo que consideramos que este repositorio podría servirte para otros estudios. Si tienes problemas ejecutando la función, escríbenos.
 
-Ejemplo: el código a continuación produciría un KML en la misma carpeta donde se encuentra clonado el repositorio, con una muestra de 40 hexágonos de resolución 12, distribuidos proporcionalmente entre las cuatro clases de cobertura mayoritaria dentro del hexágono.
+#### Ejemplos de uso de la función `sample_hex_to_kml`
+
+El código a continuación produciría un KML en la misma carpeta donde se encuentra clonado el repositorio, con una muestra de 40 hexágonos de resolución 12, distribuidos proporcionalmente entre las cuatro clases de cobertura mayoritaria dentro del hexágono.
 
 ```{r, eval=F}
 source('seleccionar-hexagonos-aleatoriamente.R')
 sample_hex_to_kml(resol = 12, n = 40, clases = c("DOSE", "SUEL", "EDIF","CONS"), seed = 1)
 ```
 
-Este otro ejemplo produce un KML con una muestra de 40 hexágonos de resolución 11, pero sólo entre las clases "EDIF" y "SUEL". El número de hexágonos dependerá de cuál sea su representación proporcional en el campus, pero la suma del número de hexágonos de cada clase será 40.
+Este otro ejemplo produce un KML con una muestra de 40 hexágonos de resolución 11, pero sólo entre las clases `"EDIF"` y `"SUEL"`. El número de hexágonos dependerá de cuál sea su representación proporcional en el campus, pero la suma del número de hexágonos de cada clase será 40.
 
 
 ```{r, eval=F}
@@ -93,7 +95,7 @@ source('seleccionar-hexagonos-aleatoriamente.R')
 sample_hex_to_kml(resol = 11, n = 40, clases = c("EDIF","SUEL"), seed = 1)
 ```
 
-Finalmente, este otro ejemplo produce un KML con una muestra de 25 hexágonos de resolución 12, todos ellos de la clase "DOSE".
+Finalmente, este otro ejemplo produce un KML con una muestra de 25 hexágonos de resolución 12, todos ellos de la clase `"DOSE"`.
 
 
 ```{r, eval=F}
@@ -102,14 +104,13 @@ sample_hex_to_kml(resol = 12, n = 25, clases = "DOSE", seed = 7)
 ```
 
 
-
 ### ¿Qué te recomendamos llevar a tus salidas de campo?
 
 **Materiales necesarios para la colecta**
 
-- Lápiz de carbón.
+- Lápiz de carbón y cuaderno de campo.
 
-- Si vas a colectar muestras en terreno, lleva papel vegetal en cantidad suficiente para generar etiquetas. Las etiquetas serán lo suficientemente pequeñas para que quepan dentro de los frascos o envases que uses, y lo suficientemente grandes para colocar la siguiente información mínima (dependerá en gran medida de tu estudio): código del hexágono, tus nombres y apellidos, fecha. Si puedes, añade coordenadas de cualquier punto dentro del hexágono en grados y grados decimales (e.g. 18.23424$^\circ$, -71.82321$^\circ$).
+- Si vas a colectar muestras en terreno, lleva papel vegetal en cantidad suficiente para generar etiquetas. Las etiquetas serán lo suficientemente pequeñas para que quepan dentro de los frascos o envases que uses, y lo suficientemente grandes para colocar la siguiente información mínima (dependerá en gran medida de tu estudio): código del hexágono, tus nombres y apellidos, fecha. Si puedes, añade coordenadas de cualquier punto dentro del hexágono en grados y grados decimales (e.g. 18.23424°, -71.82321°).
 
 - Alcohol isopropílico. Este alcohol destruye (con el tiempo) muchas muestras, pero las conserva bien si sólo pasan unos pocos días. El alcohol etílico sería la opción idónea, pero está muy caro últimamente.
 
