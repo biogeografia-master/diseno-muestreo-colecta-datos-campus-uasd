@@ -6,6 +6,9 @@ Domingo, República Dominicana
 
 <!-- README.md se genera a partir de README.Rmd. Por favor, edita ese archivo. -->
 
+Versión HTML (quizá más legible),
+[aquí](https://biogeografia-master.github.io/diseno-muestreo-colecta-datos-campus-uasd/README.html)
+
 <img src="qr.jpg" width="30%" style="display: block; margin: auto auto auto 0;" />
 
 <https://github.com/biogeografia-master/diseno-muestreo-colecta-datos-campus-uasd>
@@ -13,54 +16,58 @@ Domingo, República Dominicana
 # Diseño de muestreo y colecta de datos de campo
 
 En teoría, **una buena investigación comienza con unas buenas
-preguntas**. Se supone que las preguntas son las que guían el resto del
-proceso de investigación desde el comienzo, por lo que formular
-preguntas y definir objetivos debería ser el primer paso. Pero en el
-contexto de un ejercicio académico, en concreto, dentro de una materia
-del segundo o tercer año de carrera, como lo es biogeografía, he optado
-por no ser muy exigente en el orden de las cosas, por lo que no pediré
-formular preguntas de forma preceptiva antes de iniciar tu estudio. Ya
-verás que, con el tiempo, la experiencia (y el trabajo de campo) te dará
-más información y herramientas para formular buenas preguntas que den
-inicio a importantes estudios; mientras más aprendas sobre un área de
-conocimiento específica, mejores preguntas podrás formular, porque
-sabrás en qué dirección debe avanzarse en función del estado de la
-cuestión.
+preguntas**; este es el primer aspecto que debe atenderse en un buen
+estudio. Formular preguntas y definir objetivos deberían ser el primer
+paso, porque guían el resto de la investigación. Notarás que, con el
+tiempo, la experiencia (y el trabajo de campo), obtendrás más
+información y herramientas para formular buenas preguntas y objetivos
+que den inicio a importantes estudios; mientras más aprendas sobre un
+área de conocimiento específica, mejores preguntas podrás formular,
+porque sabrás en qué dirección debe avanzarse en función del estado de
+la cuestión.
 
 El segundo aspecto más importante de una buena investigación es contar
 con un buen diseño de muestreo y una colecta de datos de campo realizada
-de forma sistemática. Esta parte la más importante de un buen trabajo de
-ecología numérica, pues si colectamos buenos datos hoy, en el futuro
+de forma sistemática. Esta es la parte más importante de un buen trabajo
+de investigación, pues si colectamos buenos datos hoy, en el futuro
 podremos responder múltiples preguntas, incluso algunas que no hayamos
 formulado inicialmente.
 
 En investigaciones que siguen diseños estructurados y protocolos de
 campo, **la sección “Metodología” (el “cómo” de un estudio) normalmente
 se compone de varias subsecciones, una de las cuales comúnmente se
-denomina “Diseño de muestreo y colecta de datos de campo”. Este escrito
-tiene por objetivo apoyarte en ese aspecto.**.
+denomina “Diseño de muestreo y colecta de datos de campo”. Este
+repositorio tiene por objetivo apoyarte en ese aspecto.**.
 
-## Colecta tus datos de campo
+# Selecciona tus sitios de muestreo
 
-Usa la función de abajo para elegir un número de hexágonos que
-consideres abarcable para tus fines, considerando la cobertura como
+Usa la función de abajo para elegir un número de sitios del campus de la
+UASD donde recogerás tus datos. En este caso, los sitios son polígonos
+de forma hexagonal. El número de hexágonos que elijas debe ser abarcable
+para tus fines. En tu selección, podrá usar la cobertura del suelo como
 criterio de estratificación estadística. Piensa en un “estrato
 estadístico” como una cualidad que segrega en subgrupos un ecosistema o
-un territorio. Por ejemplo, si segregamos el campus de la UASD según su
-cobertura, podríamos tener al menos cuatro subgrupos o estratos: áreas
-con dosel, áreas con edificaciones, áreas con herbáceas/suelo expuesto y
-áreas pavimentadas. Si queremos hacer un muestreo estratificado e
-integral, deberíamos asegurarnos de colectar datos en cada uno de esos
-estratos, para que nuestra muestra sea representativa del territorio. Si
-queremos concentrarnos en una hábitat específico, por ejemplo, en las
-áreas con dosel, entonces igualmente necesitaremos los estratos para
-saber dónde elegir nuestras muestras.
+un territorio. En concreto, si segregamos el campus de la UASD según su
+cobertura, podríamos tener al menos cuatro subgrupos o estratos: 1)
+Áreas con dosel; 2) Áreas con edificaciones; 3) Áreas con
+herbáceas/suelo expuesto; 4) Áreas pavimentadas. Si queremos hacer un
+muestreo estratificado e integral, considerando todas las coberturas
+posibles del campus, deberíamos asegurarnos de colectar datos en cada
+uno de esos estratos, para que nuestra muestra sea representativa del
+territorio. Si queremos concentrarnos en un hábitat específico, por
+ejemplo, en las áreas con dosel, entonces también podremos hacerlo
+usando los datos de cobertura.
 
-Se ha segregado el campus de la UASD en hexágonos de la biblioteca H3 de
-resolución 11 (medianos, ~1600 m<sup>2</sup> cada uno) y 12 (pequeños,
-~230 m<sup>2</sup> cada uno), en el polígono núcleo del campus de la
-Universidad Autónoma de Santo Domingo (UASD), sede central; el diseño
-está basado en Batlle (2023), dentro del cual se encuentra el documento
+Se ha segregado el campus de la UASD en hexágonos H3 (polígonos estables
+y únicos, codificados según un índice espacial sistemático, de límites
+imaginarios, repartidos por todo el planeta, y creados usando una
+[librería propiedad de la empresa Uber](https://h3geo.org/)) de
+“resolución 11” (medianos, ~1600 m<sup>2</sup> cada uno) y “resolución
+12” (pequeños, ~230 m<sup>2</sup> cada uno). Los hexágonos de nuestro
+repositorio sólo abarcan el área núcleo del campus de la Universidad
+Autónoma de Santo Domingo (UASD), sede central; el diseño está basado en
+[este repositorio](https://github.com/geofis/coberturas-suelo-uasd)
+(Martínez-Batlle, 2023), dentro del cual se encuentra el documento
 [“Clasificación de hexágonos del polígono núcleo del campus de la
 Universidad Autónoma de Santo Domingo (UASD) en su sede central, usando
 coberturas del
@@ -70,19 +77,19 @@ clasificación.
 
 Con dicha información, la cual hemos añadido a este repo, podrás
 realizar una selección de sitios en función de la cobertura y el tamaño
-de tu muestra, aplicando la función mostrada abajo. Puedes seleccionar
-hexágonos de varias clases, en cuyo caso el número de hexágonos será
-proporcional a la representación proporcional de cada clase en el campus
-(condición básica del muestreo estratificado).
+de tu muestra, aplicando la función mostrada abajo. Podrás seleccionar
+hexágonos de varias clases de coberturas, en cuyo caso el número de
+hexágonos será proporcional a la representación proporcional de cada
+clase en el campus (condición básica del muestreo estratificado).
 
-### Función para seleccionar hexágonos
+## Función para seleccionar hexágonos
 
 Los profesores somos conscientes de que usar R para hacer la selección
 de sitios de muestreo es un reto para muchos estudiantes, por lo que
 hemos preparado una función que se encarga de dicho proceso. La función,
 denominada `sample_hex_to_kml`, se encarga de hacer la selección de
-sitios estratificando y aleatorizando de forma casi automática. Para
-ello, necesitarás seguir estos pasos:
+sitios (en este caso, hexágonos) estratificando y aleatorizando de forma
+casi automática. Para ello, necesitarás seguir estos pasos:
 
 1.  Clonar este repositorio desde GitHub a RStudio. Puedes usar RStudio
     Desktop (instalado en tu PC), pero necesitarás tener estos paquetes
@@ -90,7 +97,7 @@ ello, necesitarás seguir estos pasos:
     paquetes o “pelear” con dependencias, te recomendamos que trabajes
     en la cuenta que creamos para ti en nuestro servidor RStudio.
 
-2.  Ejecutar los ejemplos de código que se muestran abajo. Luego que
+2.  Ejecutar los ejemplos de código que se muestran abajo. Luego de que
     comprendas el funcionamiento, define tus propios parámetros de
     muestreo. Los parámetros que deberás definir son:
 
@@ -100,7 +107,12 @@ ello, necesitarás seguir estos pasos:
   elige 12.
 
 - Número de hexágonos (argumento `n`). Total de hexágonos que necesitas
-  en tu muestra.
+  en tu muestra. Elige un número de hexágonos abarcable que a la vez sea
+  representativo, aunque sabemos que no es una tarea sencilla. Existen
+  métodos para elegir el tamaño de una muestra, como fijar un error
+  muestral aceptable o establecer el número de unidades mínimo que
+  captura el tamaño del efecto, pero en este caso te recomendamos que
+  elijas un número que puedas abarcar en tus salidas de campo.
 
 - Clases de coberturas mayoritarias dentro del hexágono (argumento
   `clases`). Sólo hay cuatro opciones posibles; se puede elegir sólo
@@ -128,7 +140,7 @@ muestreo es, en cualquier estudio, un paso muy importante, por lo que
 consideramos que este repositorio podría servirte para otros estudios.
 Si tienes problemas ejecutando la función, escríbenos.
 
-#### Ejemplos de uso de la función `sample_hex_to_kml`
+## Ejemplos de uso de la función `sample_hex_to_kml`
 
 El código a continuación produciría un KML en la misma carpeta donde se
 encuentra clonado el repositorio, con una muestra de 40 hexágonos de
@@ -158,9 +170,9 @@ source('seleccionar-hexagonos-aleatoriamente.R')
 sample_hex_to_kml(resol = 12, n = 25, clases = "DOSE", seed = 7)
 ```
 
-### ¿Qué te recomendamos llevar a tus salidas de campo?
+# ¿Qué te recomendamos llevar a tus salidas de campo?
 
-**Materiales necesarios para la colecta**
+## Materiales necesarios para la colecta
 
 - Lápiz de carbón y cuaderno de campo.
 
@@ -188,10 +200,10 @@ sample_hex_to_kml(resol = 12, n = 25, clases = "DOSE", seed = 7)
 
   - Formularios electrónicos. Android. Descargar la aplicación [ODK
     Collect](https://play.google.com/store/apps/details?id=org.odk.collect.android)
-    desde el Play Store. Recomiendo usar Android en lugar de iPhone.
+    desde el Play Store. Recomendamos usar Android en lugar de iPhone.
     iPhone. Descargar GIC Collect.
 
-**Materiales personales recomendados**
+## Materiales personales recomendados
 
 - **¡Mucha (pero mucha) agua potable!**
 
@@ -206,16 +218,16 @@ sample_hex_to_kml(resol = 12, n = 25, clases = "DOSE", seed = 7)
 - Repelente. En el campus de la UASD no suele haber mosquitos, pero no
   está de más llevarlo por si acaso.
 
-## Referencias
+# Referencias
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0" line-spacing="2">
 
 <div id="ref-jose_ramon_martinez_batlle_2023_8404063" class="csl-entry">
 
-Batlle, J. R. M. (2023). *geofis/coberturas-suelo-uasd: Coberturas del
-suelo del polígono núcleo del campus de la Universidad Autónoma de Santo
-Domingo (UASD) en su sede central* (Versión v0.91). Zenodo.
+Martínez-Batlle, J. R. (2023). *geofis/coberturas-suelo-uasd: Coberturas
+del suelo del polígono núcleo del campus de la Universidad Autónoma de
+Santo Domingo (UASD) en su sede central* (Versión v0.91). Zenodo.
 <https://doi.org/10.5281/zenodo.8404063>
 
 </div>
